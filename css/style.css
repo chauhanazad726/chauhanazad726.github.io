@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #0a082b, #12003b);
+    color: white;
+}
+
+/* NAVBAR */
+/* FIXED NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #0a082b;
+    padding: 15px 30px;              /* FIXED: Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+.logo span {
+    color: #b07bff;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;                       /* FIXED: Reduced gap */
+}
+
+/* NAV BUTTONS */
+.btn-nav {
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #31dfff, #a46bff);
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    white-space: nowrap;             /* FIXED: Prevent cutting */
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 1100px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+    .nav-links {
+        gap: 10px;
+    }
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    gap: 40px;
+    margin-top: 120px;
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.highlight {
+    background: #7c4dff;
+    padding: 2px 12px;
+    border-radius: 8px;
+}
+
+.hero-text {
+    margin: 20px 0;
+    font-size: 18px;
+    max-width: 550px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #4dfcff, #8e5bff);
+    padding: 12px 25px;
+    color: black;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.btn-sec {
+    background: #291a49;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 18px;
+    width: 120px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.stat-box h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.social-btn {
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    background: #1e1e3f;
+    color: white;
+}
+
+.linkedin {
+    background: #0a66c2;
+}
+
+.whatsapp {
+    background: #128c7e;
+}
+
+/* IMAGE RIGHT SIDE */
+.hero-right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(40px);   /* ← Circle aur left jayega */
+}
+
+
+.img-circle {
+    background: radial-gradient(circle, #7c4dff, #2a1756);
+    padding: 35px;     /* bigger border padding */
+    border-radius: 50%;
+}
+
+
+.img-circle img {
+    width: 450px;     /* bigger size */
+    height: 450px;    /* bigger size */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+ 
+/*xxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxx */
+
+/* PROJECTS PAGE */
+.project-section {
+  padding: 120px 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+  margin-top: 40px;
+}
+
+.project-card {
+  display: block;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 18px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: .3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.10);
+}
+
+
+
+/*xxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxx */
+
+
+
+.about-section {
+    padding: 120px 60px;
+}
+
+.about-text {
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* EACH CARD STYLE */
+.skill-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.skill-card h3 {
+    margin-bottom: 18px;
+    color: #b18cff;
+}
+
+.skill-card ul {
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 28px;
+}
+
+
+
+
+/*xxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxx */
+
+/* CONTACT PAGE */
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 60px;
+    color: white;
+}
+
+.contact-left {
+    max-width: 450px;
+}
+
+.contact-left p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.social-box {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 12px 25px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+}
+
+.whatsapp {
+    border-color: #25D366;
+}
+
+.linkedin {
+    border-color: #0077b5;
+}
+
+.instagram {
+    border-color: #e4405f;
+}
+
+/* SOCIAL ICONS BOTTOM FIX */
+.contact-page {
+    position: relative;
+    min-height: 80vh;
+}
+
+.social-box {
+    position: absolute;
+    bottom: 40px; /* adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+}
+/* FIX SOCIAL ICONS AT BOTTOM */
+.social-box {
+    position: fixed;
+    bottom: 40px;   /* distance from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+    z-index: 999;
+}
+
+/* niver
+
+/* FIX SOCIAL ICONS ON ALL PAGES */
+.social-box {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+    z-index: 9999;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+}
+
+
